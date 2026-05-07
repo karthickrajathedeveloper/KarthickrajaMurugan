@@ -105,24 +105,20 @@
                 </div>
             </div>
 
-            <form data-aos="fade-left" action="https://formsubmit.co/karthickrajam8100@gmail.com" method="POST">
+            <form id="contact-form" data-aos="fade-left">
                 <label class="form-name">Your Name</label>
-                <input class="name-box" type="text" name="name" placeholder="Enter your name" required>
+                <input class="name-box" type="text" id="name" name="name" placeholder="Enter your name" required>
 
                 <label class="form-email">Your E-mail</label>
-                <input class="email-box" type="email" name="email" placeholder="Enter your e-mail" required>
+                <input class="email-box" type="email" id="email" name="email" placeholder="Enter your e-mail" required>
 
                 <label class="form-subject">Subject</label>
-                <input class="subject-box" type="text" name="subject" required>
+                <input class="subject-box" type="text" id="subject" name="subject" required>
 
                 <label class="form-message">Message</label>
-                <textarea class="message-box" name="message" required></textarea>
+                <textarea class="message-box" id="message" name="message" required></textarea>
 
-                <input type="hidden" name="_captcha" value="false">
-                <input type="hidden" name="_template" value="table">
-
-                <button class="form-submit">SUBMIT NOW</button>
-
+                <button type="submit" class="form-submit">SEND TO WHATSAPP</button>
             </form>
         </section>
 

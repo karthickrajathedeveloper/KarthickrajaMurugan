@@ -110,7 +110,7 @@ window.onload = () => {
 
 }
 
-// scroll appeare after 100px
+// scroll appear after 200px
 const toTop = document.querySelector(".top")
 window.addEventListener("scroll", () => {
     if (window.scrollY > 200) {
@@ -120,48 +120,32 @@ window.addEventListener("scroll", () => {
     }
 })
 
+// WhatsApp Redirection Logic
+const contactForm = document.getElementById('contact-form');
+if (contactForm) {
+    contactForm.addEventListener('submit', function (e) {
+        e.preventDefault();
 
+        // Get form values
+        const name = document.getElementById('name').value;
+        const email = document.getElementById('email').value;
+        const subject = document.getElementById('subject').value;
+        const message = document.getElementById('message').value;
 
+        // WhatsApp number (with country code, without +)
+        const phoneNumber = "916380528683";
 
+        // Construct the message
+        const whatsappMessage = `*New Portfolio Inquiry*%0A%0A` +
+            `*Name:* ${name}%0A` +
+            `*Email:* ${email}%0A` +
+            `*Subject:* ${subject}%0A` +
+            `*Message:* ${message}`;
 
+        // Create the WhatsApp URL
+        const whatsappUrl = `https://wa.me/${phoneNumber}?text=${whatsappMessage}`;
 
-// darkmode
-// const moonIcon = document.querySelectorAll(".moon")[0]
-// const sunIcon = document.querySelectorAll(".sun")[0]
-// let Isdark = false
-
-// moonIcon.addEventListener('click', () => {
-
-//     document.body.classList.add("dark-theme")
-//     document.body.classList.remove("light-theme")
-//     Isdark = false
-//     moonIcon.style.display = 'none'
-//     sunIcon.style.display = 'block'
-//     localStorage.setItem('theme', Isdark)
-// })
-
-// sunIcon.addEventListener('click', () => {
-
-//     document.body.classList.remove("dark-theme")
-//     document.body.classList.add("light-theme")
-//     Isdark = true
-//     moonIcon.style.display = 'block'
-//     sunIcon.style.display = 'none'
-//     localStorage.setItem('theme', Isdark)
-// })
-
-// window.onload = () => {
-//     Isdark= JSON.parse(localStorage.getItem('theme'))
-
-//     if (Isdark) {
-//         document.body.classList.remove("dark-theme")
-//         document.body.classList.add("light-theme")
-//         moonIcon.style.display = 'block'
-//         sunIcon.style.display = 'none'
-//     } else {
-//         document.body.classList.add("dark-theme")
-//         document.body.classList.remove("light-theme")
-//         moonIcon.style.display = 'none'
-//         sunIcon.style.display = 'block'
-//     }
-// }
+        // Redirect to WhatsApp
+        window.open(whatsappUrl, '_blank');
+    });
+}
