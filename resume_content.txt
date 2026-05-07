@@ -1,0 +1,176 @@
+SOFTWARE DEVELOPER 
+KARTHICKRAJA.M 
+Address : 
+karthickrajam8100@gmail.com , Mobile No : 6380528683 
+ 
+ 
+ 
+ 
+ 
+SUMMARY 
+• Embedded Software Developer with Hands-on 
+experience in IoT, microcontrollers, and real-time 
+systems. Skilled in ESP32, Raspberry Pi, LoRa, 
+Zigbee, and MQTT with strong knowledge of Python, 
+Embedded C, and cloud integration. Passionate about 
+building innovative IoT solutions for automation, 
+monitoring, and smart systems. 
+EDUCATION QUALIFICATION 
+• Computer Science with Data Analytics, Master of Science, 
+Completed, June 2022. Madurai Kamaraj University, Madurai 
+Marks 82%. 
+• Computer Science, Bachelor of Science, Completed, March 
+2020. Mary Matha College of Arts & Science, 
+Periyakulam. Marks 67%. 
+ 
+• 12th, Completed, March 2017. H.N.U.P.R. Matric Hr. Sec. 
+School, Nilakottai. State Board – Marks 65.5%. 
+ 
+• 10th, Completed, March 2015. H.N.U.P.R. Matric Hr. Sec. 
+School, Nilakottai. State Board – Marks 70%. 
+ 
+ 
+WORKING EXPERIENCE 
+The Petal Automations, Madurai. 
+Embedded Software Engineer and Python Developer 
+11-07-2022 – Present 
+CERTIFICATON 
+COURSES 
+• Python Programming 
+(Received from SSI) 
+• Machine Learning 
+• MyCaptain (Nov 2020) - It was a 
+one month internship work as 
+campus ambassador for my 
+college. 
+• Hindi 
+ 
+GitHub Link 
+ 
+https://github.com/karthickrajathede 
+veloper 
+ 
+Python Library Link 
+https://pypi.org/user/karthickraja.th 
+edeveloper 
+LANGUAGES 
+• English 
+NativeorBilingualProficiency 
+• Tamil 
+Full Professional Proficiency 
+1. Smart Gym 
+Team Size: 2 
+Role: Embedded Software and Python Developer. 
+Responsibility: Writing code for controllers such as Arduino 
+Mega, ESP8266 and Raspberry pi. 
+Technology used: IOT, UART and RS232 to USB Communication 
+Project Overview: Smart Gym system is used for automatically allocate 
+locker to the gym members and also maintain the locker details and also 
+weighing scale send the weight. And update the locker status and Object 
+status which is inside of the locker to the front end using IOT. 
+ 
+2. IOT LAB KIT V 2 & 2.1 
+Team Size: 3 
+Role: Embedded Software Developer. 
+Responsibility: Writing code in ESP32. 
+Technology used: IOT, UART, SPI, RS232 to USB, USB to 
+TTL, RFID, I2S, Bluetooth, MQTT and I2C communication 
+Protocols. 
+Project Overview: It is for student learning purpose. Learn 
+about how to interface I/O and sensors modules with IOT. 
+ 
+ 
+3. Ambulance Alert 
+Team Size: 2. 
+Role: Embedded Software Developer. 
+Responsibility: Writing a Code in LoRa. 
+Technology used: Bluetooth Communication Protocol 
+Project Overview: Developed a smart medical emergency 
+alert system where crossing an emergency gate triggers 
+notification to hospital staff. Enabled ward assistants to 
+receive real-time alerts and prepare for patient admission. 
+4. Nurse Calling 
+System Team Size: 2 
+Role: Embedded Software Developer 
+Responsibility: Writing a code in Zigbee. 
+Technology used: Zigbee, Raspberry pi (Micro python) 
+ 
+Project Overview: A wireless nurse calling system that covers 
+up to 1500 meters inside a hospital using Zigbee communication 
+contains features like code blue alert, nurse call emergency alert, 
+housekeeping call alert, Extra assistance call alert and Toilet and 
+hand unit call alert and nursing station emergency alert, etc. 
+ENGINEERING / 
+TECHNOLOGY 
+Languages - 
+C, C++, Embedded C, 
+Python, Micro-Python 
+Database - 
+MYSQL. 
+ 
+Web designing - 
+HTML. 
+ 
+IDE – 
+Pycharm, Arduino, VS code. 
+ 
+Controllers – 
+Nodemcu, ESP32, Arduino 
+UNO and MEGA, Raspberry pi, 
+STC15, PIC16F716. 
+ 
+RF- 
+WiFi, BLE, LoRa, zigbee, 
+5. Steam 
+ 
+Team Size: 5 
+Role: Embedded Software Developer 
+Responsibility: Writing a code in STC15F104AS, STC15W408, 
+ESP32. 
+Technology used: One-Wire protocol. 
+Project Overview: Developed an IoT learning kit to interface 
+sensors and controllers, enabling students to understand robotics and 
+embedded systems. Built mini robots through practical application 
+to enhance experiential learning. 
+ 
+6. Portfolio Monitor 
+ 
+Team Size: 2 
+Role: Senior Embedded Software Developer 
+Responsibility: Developed embedded firmware for 
+ESP32. 
+Technology used: E-Paper Display, API and MQTT. 
+Features: Real-time stock updates, RGB + Buzzer alerts, Playlist & 
+Single Mode, BMS integration, OTA updates 
+Project Overview: Developed a portable stock portfolio monitoring 
+system using ESP32, E-Paper display, REST APIs, and MQTT. The 
+system supports real-time stock updates with visual and auditory 
+alerts, playlist/single display modes, battery management system 
+(BMS) for portable operation, and OTA (Over-the-Air) firmware 
+updates. 
+ 
+ACADEMIC PROJECTS 
+• Smart Dustbin using Raspberry pi - The project is 
+used to automatically open and close the lid and when 
+it’s overflows cardinally send the WhatsApp message 
+and normal SMS. 
+• Smart Garbage Vehicle using ESP32-CAM – 
+Built a smart garbage collection vehicle with an 
+ESP32-CAM that detects whether a dustbin is full 
+using image processing. If full, the system shares the 
+GPS location of the bin and streams live video of the 
+vehicle through email while autonomously moving 
+towards the location for collection. 
+PERSONAL 
+INFORMATION 
+Father Name : Murugan.S 
+DOB : 08/01/2000 
+Gender : Male 
+Marital Status : Single 
+Nationality : Indian 
+DECLARATION 
+I do hereby declare that the 
+above information is true to the best 
+of my knowledge. 
+SIGNATURE 
+M.KARTHICK RAJA 
