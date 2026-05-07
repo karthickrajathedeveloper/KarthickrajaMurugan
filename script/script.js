@@ -142,8 +142,8 @@ if (contactForm) {
             `*Subject:* ${subject}%0A` +
             `*Message:* ${message}`;
 
-        // Create the WhatsApp URL
-        const whatsappUrl = `https://wa.me/${phoneNumber}?text=${whatsappMessage}`;
+        // Create the WhatsApp URL (Using api.whatsapp.com for better redirection support)
+        const whatsappUrl = `https://api.whatsapp.com/send?phone=${phoneNumber}&text=${whatsappMessage}`;
 
         // Redirect to WhatsApp
         window.open(whatsappUrl, '_blank');
