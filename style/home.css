@@ -589,6 +589,14 @@ opacity: 1;
     .about-project-img {
         padding-inline: 60px;
     }
+
+    .skill-all-box {
+        grid-template-columns: repeat(6, 1fr);
+    }
+
+    .skill-box:nth-child(9) {
+        grid-column-start: auto;
+    }
 }
 
 @media (max-width: 1100px) {
@@ -722,6 +730,10 @@ opacity: 1;
 
     .about-project-img-2 {
         row-gap: 10px;
+    }
+
+    .skill-all-box {
+        grid-template-columns: repeat(4, 1fr);
     }
 }
 
@@ -868,6 +880,10 @@ opacity: 1;
     .about-project-img-2 {
         row-gap: 7px;
     }
+
+    .skill-all-box {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
 
 
@@ -982,6 +998,16 @@ opacity: 1;
     .tool-2 {
         left: 25px;
         bottom: 20px;
+    }
+
+    .skill-all-box {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+
+    .skill-box {
+        min-width: unset;
+        width: 100%;
     }
 }
 

@@ -4,6 +4,469 @@
     -webkit-text-fill-color: transparent;
 }
 
+/* Blended Wavy Neon Roadmap Section */
+.roadmap-section {
+    padding-inline: 60px;
+    margin-bottom: 150px;
+    padding-block: 150px;
+    background: #000;
+}
+
+.roadmap-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 100px;
+}
+
+.roadmap-topic {
+    font-size: 60px;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    background: linear-gradient(90deg, #ff00ff, #9d00ff, #00d4ff, #ff8c00);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 0;
+    text-shadow: 0 0 20px rgba(157, 0, 255, 0.4);
+}
+
+.roadmap-subtitle {
+    font-size: 18px;
+    color: #888;
+    letter-spacing: 3px;
+    font-weight: 600;
+}
+
+/* Career Mountain Journey (High-Fidelity Infographic) */
+.journey-mountain-container {
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    height: 1350px;
+    margin: 40px auto;
+    background: rgba(13, 13, 26, 0.4);
+    border-radius: 40px;
+    overflow: visible;
+    padding-top: 60px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: inset 0 0 40px rgba(0, 0, 0, 0.5);
+    transition: background 0.5s ease;
+}
+
+/* Light Theme Overrides */
+body.light-theme .journey-mountain-container {
+    background: rgba(240, 242, 245, 0.8);
+    border-color: rgba(0, 0, 0, 0.1);
+    box-shadow: inset 0 0 30px rgba(0, 0, 0, 0.05);
+}
+
+/* Winding SVG Road */
+.mountain-path-svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.road-base {
+    fill: none;
+    stroke: #2a2a4a;
+    stroke-width: 60;
+    stroke-linecap: round;
+    filter: drop-shadow(0 0 15px rgba(0, 0, 0, 0.5));
+    transition: stroke 0.5s ease;
+}
+
+body.light-theme .road-base {
+    stroke: #d1d9e6;
+    filter: drop-shadow(0 5px 15px rgba(0, 0, 0, 0.1));
+}
+
+.road-line-dashed {
+    fill: none;
+    stroke: rgba(255, 255, 255, 0.3);
+    stroke-width: 4;
+    stroke-dasharray: 20 20;
+    stroke-linecap: round;
+}
+
+body.light-theme .road-line-dashed {
+    stroke: rgba(0, 0, 0, 0.1);
+}
+
+.marker-dot {
+    fill: #fff;
+    stroke: #ff00cc;
+    stroke-width: 3;
+    filter: drop-shadow(0 0 8px #ff00cc);
+}
+
+/* Background Elements */
+.mountain-bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+.cloud {
+    position: absolute;
+    width: 200px;
+    height: 100px;
+    background: rgba(255, 255, 255, 0.05);
+    filter: blur(30px);
+    border-radius: 50%;
+    animation: floatCloud 20s infinite linear;
+}
+
+body.light-theme .cloud {
+    background: rgba(0, 0, 0, 0.03);
+}
+
+.c1 {
+    top: 10%;
+    left: -10%;
+}
+
+.c2 {
+    top: 40%;
+    right: -10%;
+    animation-delay: -5s;
+}
+
+@keyframes floatCloud {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(120vw);
+    }
+}
+
+/* Milestones (Flags & Cards) */
+.mountain-milestones {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 5;
+}
+
+.m-item {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transform: translate(-50%, -100%);
+    width: 200px;
+    z-index: 10;
+}
+
+.m-flag {
+    font-size: 24px;
+    margin-top: 5px;
+    filter: drop-shadow(0 0 8px currentColor);
+    animation: wave 2s infinite ease-in-out;
+    position: relative;
+    z-index: 2;
+}
+
+/* Summit Landmark */
+.summit-landmark {
+    position: absolute;
+    top: -100px;
+    font-size: 80px;
+    z-index: -1;
+}
+
+.summit-landmark i {
+    color: #ff6a00;
+    /* Vibrant Orange */
+    filter: drop-shadow(0 0 20px #ff6a00);
+    animation: climbUp 2s infinite ease-in-out;
+}
+
+@keyframes climbUp {
+    0% {
+        transform: translateY(20px) scale(0.9);
+        opacity: 0.5;
+    }
+
+    50% {
+        transform: translateY(0) scale(1.1);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(-20px) scale(0.9);
+        opacity: 0;
+    }
+}
+
+body.light-theme .summit-landmark i {
+    color: #ff00cc;
+    /* Pink for light theme */
+    filter: drop-shadow(0 0 10px #ff00cc);
+}
+
+.summit-glow {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 200px;
+    height: 200px;
+    background: radial-gradient(circle, rgba(255, 204, 0, 0.2), transparent);
+    filter: blur(30px);
+}
+
+/* Future 2027 Sequence */
+.future-2027 {
+    transform: translate(0, -50%) !important;
+    width: 200px !important;
+}
+
+.run-to-future {
+    font-size: 35px;
+    color: #ff6a00;
+    text-shadow: 0 0 20px #ff6a00;
+    animation: runBeyond 2s infinite linear;
+}
+
+@keyframes runBeyond {
+    0% {
+        transform: translateX(0) scaleX(1);
+    }
+
+    50% {
+        transform: translateX(30px) scaleX(1.1);
+    }
+
+    100% {
+        transform: translateX(60px) scaleX(1);
+        opacity: 0;
+    }
+}
+
+.future-label {
+    font-size: 14px;
+    font-weight: 700;
+    color: #ff6a00;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 10px;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 5px 15px;
+    border-radius: 20px;
+    border: 1px solid #ff6a00;
+    box-shadow: 0 0 15px rgba(255, 106, 0, 0.3);
+}
+
+body.light-theme .future-label {
+    background: rgba(255, 255, 255, 0.8);
+    color: #ff6a00;
+}
+
+@keyframes wave {
+
+    0%,
+    100% {
+        transform: rotate(-10deg);
+    }
+
+    50% {
+        transform: rotate(10deg);
+    }
+}
+
+.flag-pink {
+    color: #ff00cc;
+}
+
+.flag-orange {
+    color: #ff6a00;
+}
+
+.flag-purple {
+    color: #7b2ff7;
+}
+
+.flag-blue {
+    color: #00d2ff;
+}
+
+.flag-gold {
+    color: #ffcc00;
+    font-size: 50px;
+}
+
+.m-card {
+    background: rgba(9, 9, 31, 0.95);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    padding: 12px;
+    text-align: center;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+    transition: all 0.4s ease;
+}
+
+body.light-theme .m-card {
+    background: rgba(255, 255, 255, 0.9);
+    border-color: rgba(0, 0, 0, 0.1);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.m-item:hover .m-card {
+    transform: translateY(-10px) scale(1.1);
+}
+
+.m-year {
+    display: block;
+    font-size: 15px;
+    font-weight: 800;
+    margin-bottom: 3px;
+    background: linear-gradient(to right, #fff, #bbb);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+body.light-theme .m-year {
+    background: linear-gradient(to right, #333, #666);
+    -webkit-background-clip: text;
+}
+
+.m-desc {
+    font-size: 13px;
+    color: #ccc;
+    line-height: 1.4;
+}
+
+body.light-theme .m-desc {
+    color: #444;
+}
+
+/* Climbing Person */
+.climbing-person {
+    position: absolute;
+    font-size: 40px;
+    color: #fff;
+    z-index: 10;
+    text-shadow: 0 0 20px #00d2ff;
+    animation: climb 3s infinite ease-in-out;
+}
+
+body.light-theme .climbing-person {
+    color: #333;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Road Runner (Path Follower) */
+.road-runner {
+    position: absolute;
+    z-index: 100;
+    offset-path: path("M100,1260 C200,1260 300,1170 300,1080 S100,900 100,810 S400,630 500,540 S800,450 800,270 S500,90 500,45");
+    offset-rotate: auto;
+    animation: journeyRun 10s infinite linear;
+    pointer-events: none;
+}
+
+.road-runner i {
+    font-size: 35px;
+    color: #ff6a00;
+    text-shadow: 0 0 15px #ff6a00;
+}
+
+@keyframes journeyRun {
+    0% {
+        offset-distance: 0%;
+        opacity: 0;
+    }
+
+    5% {
+        opacity: 1;
+    }
+
+    95% {
+        opacity: 1;
+    }
+
+    100% {
+        offset-distance: 100%;
+        opacity: 0;
+    }
+}
+
+body.light-theme .road-runner i {
+    color: #ff00cc;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .journey-mountain-container {
+        height: auto;
+        padding: 50px 10px;
+        overflow: visible;
+    }
+
+    .mountain-path-svg {
+        display: none;
+    }
+
+    .mountain-milestones {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .m-item {
+        position: relative !important;
+        left: 0 !important;
+        top: 0 !important;
+        transform: none;
+        width: 100%;
+    }
+
+    .climbing-person {
+        display: none;
+    }
+}
+
+@media (max-width: 1200px) {
+    .roadmap-container.snake-path {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 50px 20px;
+    }
+
+    .roadmap-container.snake-path::before,
+    .roadmap-container.snake-path::after,
+    .roadmap-connector,
+    .roadmap-dot::before {
+        display: none;
+    }
+
+    .roadmap-item {
+        width: 100%;
+        margin-bottom: 50px;
+    }
+
+    .roadmap-card {
+        width: 100%;
+    }
+}
+
+
+
 .about-me-section {
     margin-top: 120px;
     display: flex;
@@ -128,7 +591,7 @@
     font-weight: 700;
 }
 
-.about-topic{
+.about-topic {
     color: var(--black-color);
 }
 
@@ -208,7 +671,7 @@ marquee img {
     margin-bottom: 50px;
 }
 
-.edu{
+.edu {
     margin-bottom: 5px;
 }
 
@@ -306,16 +769,6 @@ marquee img {
 
 
 
-
-
-
-
-
-
-
-
-
-
 @media (max-width: 1460px) {
     .detail {
         font-size: 60px;
@@ -363,6 +816,7 @@ marquee img {
     .about-me-section,
     .about-img,
     .count,
+    .roadmap-section,
     .edu-exp-section,
     .companies-logo-section,
     .follow-me-section {
@@ -540,6 +994,7 @@ marquee img {
     .about-me-section,
     .about-img,
     .count,
+    .roadmap-section,
     .edu-exp-section,
     .companies-logo-section,
     .follow-me-section {
@@ -560,7 +1015,8 @@ marquee img {
         margin-bottom: 30px;
     }
 
-    .edu,.year {
+    .edu,
+    .year {
         margin-bottom: 20px;
     }
 
