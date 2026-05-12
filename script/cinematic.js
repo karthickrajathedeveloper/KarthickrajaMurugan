@@ -2,11 +2,17 @@ document.addEventListener("DOMContentLoaded", () => {
     // Register GSAP plugins
     gsap.registerPlugin(ScrollTrigger);
 
-    // Prepare Signature Text for Animation
+    // Prepare Signature for Expansion Animation
     const sigText = document.getElementById('loader-sig');
     if (sigText) {
-        const letters = sigText.innerText.split("");
-        sigText.innerHTML = letters.map(char => `<span class='sig-char' style='display:inline-block; opacity:0; transform:translateY(10px)'>${char === " " ? "&nbsp;" : char}</span>`).join("");
+        // Grouping: K | arthick | r | aja
+        sigText.innerHTML = `
+            <span class="sig-group init-k">K</span><span class="sig-group exp-1">arthick</span><span class="sig-group init-r">r</span><span class="sig-group exp-2">aja</span>
+        `;
+        
+        // Style these groups for expansion
+        gsap.set(".sig-group", { display: "inline-block" });
+        gsap.set(".exp-1, .exp-2", { width: 0, opacity: 0, overflow: "hidden", verticalAlign: "bottom" });
     }
 
     const tl = gsap.timeline();
@@ -37,20 +43,29 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
-    // 1. Luxury Signature Reveal
-    gsap.set(".signature-text", { opacity: 1 });
-    tl.to(".sig-char", {
+    // 1. initials Reveal (K and R)
+    gsap.set(".init-k, .init-r", { opacity: 0, y: 10 });
+    
+    tl.to(".init-k, .init-r", {
         opacity: 1,
         y: 0,
-        duration: 0.8,
-        stagger: 0.1,
+        duration: 1,
+        stagger: 0.2,
         ease: "power2.out"
     })
+    // 2. Name Expansion
+    .to(".exp-1, .exp-2", {
+        width: "auto",
+        opacity: 1,
+        duration: 1.5,
+        ease: "expo.inOut",
+        delay: 0.3
+    })
     .to(".sig-underline", {
-        width: "120%",
+        width: "110%",
         duration: 1.2,
         ease: "power1.inOut"
-    }, "-=0.5")
+    }, "-=0.8")
     .to(".sig-tagline", {
         opacity: 1,
         y: -5,

@@ -72,12 +72,17 @@
     letter-spacing: 2px;
 }
 
-.sig-char {
+.sig-group {
     background: linear-gradient(to bottom, #bf953f, #fcf6ba, #b38728, #fcf6ba, #bf953f);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     color: #bf953f; /* Fallback */
     filter: drop-shadow(0 0 8px rgba(191, 149, 63, 0.4));
+    white-space: nowrap;
+}
+
+.init-k, .init-r {
+    font-weight: 400;
 }
 
 .sig-underline {
