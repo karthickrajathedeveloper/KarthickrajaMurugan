@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Karthickraja M | Software Developer</title>
+    <title>Karthickraja | Software Developer</title>
     <meta name="description" content="Portfolio of Karthickraja, an Embedded Systems and IoT Developer 
         specializing in automation and real-time solutions.">
 
@@ -26,6 +26,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
 
     <!-- close-icon-link -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -37,267 +38,322 @@
 
     <!-- animation -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="style/cinematic.css">
+    <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
 
 </head>
 
 <body>
-    <a class="top" href="#"><i class="arrow up"></i></a>
-    <div class="container">
-        <!-- header -->
-        <!-- desktop header -->
-        <nav class="desktop-header">
-            <ul class="nav-bar">
-                <div class="header-left">
-                    <li>
-                        <h1 class="desktop">PORTFOLIO</h1>
-                    </li>
-                    <li><a href="index.html" class="header home">Home</a></li>
-                    <li><a href="projects.html" class="header project">Projects</a></li>
-                    <li><a href="about.html" class="header about">About</a></li>
-                    <li><a href="contact.html" class="header contact">Contact</a></li>
-                    <!-- <li><a href="#" class="header projects">Projects</a></li> -->
-                    <!-- <li><a href="Client-testimonials.html" class="header Testimonials ">Client Testimonials</a></li> -->
-                    <!-- <li><a href="Blog.html" class="header blog">Blog</a></li> -->
+    <div id="preloader">
+        <div class="loader-particles"></div>
+        <div class="loader-content">
+            <div class="signature-loader-wrapper">
+                <h1 class="signature-text" id="loader-sig">Karthickraja</h1>
+                <div class="sig-underline"></div>
+                <div class="sig-tagline">THE DEVELOPER</div>
+            </div>
+            <div class="premium-text-wrapper">
+                <div class="loader-line-container">
+                    <div class="loader-line-progress"></div>
                 </div>
-                <div class="header-right">
-                    <a href="contact.html"><button class="header-button">LET'S TALK</button></a>
-                    <div class="moon"><i class="fa-solid fa-moon"></i></div>
-                    <div class="sun"><i class="fa-solid fa-sun"></i></div>
-                </div>
-            </ul>
-        </nav>
+            </div>
+        </div>
+        <div class="loader-panel panel-left"></div>
+        <div class="loader-panel panel-right"></div>
+    </div>
 
-        <!-- mobile-header -->
-        <nav class="mobile-header">
-            <div class="mobile-nav">
-                <div class="control">
-                    <h1 class="mobile">Karthickraja. M</h1>
-                    <div class="control-right">
+    <div class="bg-mesh"></div>
+
+    <div id="main-content">
+        <a class="top" href="#"><i class="arrow up"></i></a>
+        <div class="container">
+            <!-- header -->
+            <!-- desktop header -->
+            <nav class="desktop-header">
+                <ul class="nav-bar">
+                    <div class="header-left">
+                        <li>
+                            <h1 class="desktop-title"><span class="desktop">SOFTWARE DEVELOPER</span></h1>
+                        </li>
+                    </div>
+                    <div class="header-right">
+                        <li><a href="index.html" class="header home">Home</a></li>
+                        <li><a href="projects.html" class="header project">Projects</a></li>
+                        <li><a href="about.html" class="header about">About</a></li>
+                        <li><a href="contact.html" class="header contact">Contact</a></li>
+                        <a href="contact.html"><button class="header-button">LET'S TALK</button></a>
                         <div class="moon"><i class="fa-solid fa-moon"></i></div>
                         <div class="sun"><i class="fa-solid fa-sun"></i></div>
-                        <div id="three-bar" class="three-bar"><i class="fa fa-bars"></i></div>
-                        <div id="close" class="close"><i class="fa fa-close"></i></div>
                     </div>
-                </div>
-                <ul id="mobile-drop-down" class="mobile-drop-down ">
-                    <li><a href="index.html" class="header2 home">Home</a></li>
-                    <li><a href="projects.html" class="header2 project">Projects</a></li>
-                    <li><a href="about.html" class="header2 about">About</a></li>
-                    <li><a href="contact.html" class="header2 contact">Contact</a></li>
-                    <!-- <li><a href="#" class="header2 projects">Projects</a></li> -->
-                    <!-- <li><a href="Client-testimonials.html" class="header2 Testimonials ">Client Testimonials</a></li> -->
-                    <!-- <li><a href="Blog.html" class="header2 blog">Blog</a></li> -->
-                    <li><a class="headerbutton" href="contact.html"><button class="header2-button">LET'S
-                                TALK</button></a></li>
                 </ul>
-            </div>
-        </nav>
+            </nav>
 
-        <!-- profile -->
-        <section data-aos="fade-down" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-delay="200"
-            class="profile-section">
-            <div class="profile">
-                <h1 class="detail"><span class="name">Hello, I'm Karthickraja,</span> Embedded Software Developer based in India.
-                </h1>
-                <p class="detail-para"> Hands-on experience in IoT, microcontrollers (ESP32, Raspberry Pi, Arduino), and real-time systems. Building innovative solutions for automation.</p>
-                <a href="contact.html"><button class="profile-button">GET IN TOUCH</button></a>
-                <a href="projects.html"><button class="profile-button-2">VIEW ALL WORKS</button></a>
-            </div>
-            <img class="profile-picture" src="images/person.jpeg" alt="">
-        </section>
+            <!-- mobile-header -->
+            <nav class="mobile-header">
+                <div class="mobile-nav">
+                    <div class="control">
+                        <h1 class="mobile">Karthickraja. M</h1>
+                        <div class="control-right">
+                            <div class="moon"><i class="fa-solid fa-moon"></i></div>
+                            <div class="sun"><i class="fa-solid fa-sun"></i></div>
+                            <div id="three-bar" class="three-bar"><i class="fa fa-bars"></i></div>
+                            <div id="close" class="close"><i class="fa fa-close"></i></div>
+                        </div>
+                    </div>
+                    <ul id="mobile-drop-down" class="mobile-drop-down ">
+                        <li><a href="index.html" class="header2 home">Home</a></li>
+                        <li><a href="projects.html" class="header2 project">Projects</a></li>
+                        <li><a href="about.html" class="header2 about">About</a></li>
+                        <li><a href="contact.html" class="header2 contact">Contact</a></li>
+                        <!-- <li><a href="#" class="header2 projects">Projects</a></li> -->
+                        <!-- <li><a href="Client-testimonials.html" class="header2 Testimonials ">Client Testimonials</a></li> -->
+                        <!-- <li><a href="Blog.html" class="header2 blog">Blog</a></li> -->
+                        <li><a class="headerbutton" href="contact.html"><button class="header2-button">LET'S
+                                    TALK</button></a></li>
+                    </ul>
+                </div>
+            </nav>
 
-        <!-- marquee -->
-        <div class="marquee-bg">
-            <marquee>
-                Design <img src="images/Star.png"> Develop <img src="images/Star.png"> Discover <img
-                    src="images/Star.png">
-                Design <img src="images/Star.png"> Develop <img src="images/Star.png"> Discover <img
-                    src="images/Star.png">
-                Design <img src="images/Star.png"> Develop <img src="images/Star.png"> Discover <img
-                    src="images/Star.png">
-                Design <img src="images/Star.png"> Develop <img src="images/Star.png"> Discover <img
-                    src="images/Star.png">
-                Design <img src="images/Star.png"> Develop <img src="images/Star.png"> Discover<img
-                    src="images/Star.png">
-                Design <img src="images/Star.png"> Develop <img src="images/Star.png"> Discover<img
-                    src="images/Star.png">
-                Design <img src="images/Star.png"> Develop <img src="images/Star.png"> Discover<img
-                    src="images/Star.png">
-                Design <img src="images/Star.png"> Develop <img src="images/Star.png"> Discover<img
-                    src="images/Star.png">
-                Design <img src="images/Star.png"> Develop <img src="images/Star.png"> Discover<img
-                    src="images/Star.png">
-            </marquee>
-        </div>
+            <!-- profile -->
+            <section data-aos="fade-down" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-delay="200"
+                class="profile-section">
+                <div class="profile">
+                    <h1 class="detail"><span class="name">I'm Karthickraja,</span> <br>
+                        Embedded Software Developer
+                        based in India.
+                    </h1>
+                    <p class="detail-para"> Hands-on experience in IoT, microcontrollers (ESP32, Raspberry Pi, Arduino),
+                        and
+                        real-time systems. Building innovative solutions for automation.</p>
+                    <a href="contact.html"><button class="profile-button">GET IN TOUCH</button></a>
+                    <a href="projects.html"><button class="profile-button-2">VIEW ALL WORKS</button></a>
+                </div>
+                <img class="profile-picture" src="images/person.jpeg" alt="">
+            </section>
 
-        <!-- project -->
-        <section class="project-section">
-            <div class="project-intro" data-aos="fade-down">
-                <h1 class="topic">My Projects</h1>
-                <p class="project-para">  I conduct in-depth research before starting any project, ensuring efficient solutions 
-                    and real-world impact.</p>
+            <!-- marquee -->
+            <div class="marquee-bg">
+                <marquee>
+                    Design <img src="images/Star.png"> Develop <img src="images/Star.png"> Discover <img
+                        src="images/Star.png">
+                    Design <img src="images/Star.png"> Develop <img src="images/Star.png"> Discover <img
+                        src="images/Star.png">
+                    Design <img src="images/Star.png"> Develop <img src="images/Star.png"> Discover <img
+                        src="images/Star.png">
+                    Design <img src="images/Star.png"> Develop <img src="images/Star.png"> Discover <img
+                        src="images/Star.png">
+                    Design <img src="images/Star.png"> Develop <img src="images/Star.png"> Discover<img
+                        src="images/Star.png">
+                    Design <img src="images/Star.png"> Develop <img src="images/Star.png"> Discover<img
+                        src="images/Star.png">
+                    Design <img src="images/Star.png"> Develop <img src="images/Star.png"> Discover<img
+                        src="images/Star.png">
+                    Design <img src="images/Star.png"> Develop <img src="images/Star.png"> Discover<img
+                        src="images/Star.png">
+                    Design <img src="images/Star.png"> Develop <img src="images/Star.png"> Discover<img
+                        src="images/Star.png">
+                </marquee>
             </div>
-            <div class="all-project">
-                <div class="project-1" data-aos="fade-right">
-                    <img class="project-image-1" src="images/projects/smart_gym_iot.png" style="border-radius: 20px; box-shadow: 0px 10px 30px rgba(177, 108, 234, 0.3);" alt="Smart GYM">
-                    <div class="project-1-hover">
-                        <a href="projects.html" class=" project-link-1">View Project Details</a>
-                        <h1 class="project-name-1">Smart GYM</h1>
-                        <h3 class="tech">Technology</h3>
-                        <p class="tool">IoT, UART, ESP8266</p>
+
+            <!-- project -->
+            <section class="project-section">
+                <div class="project-intro" data-aos="fade-down">
+                    <h1 class="topic">My Projects</h1>
+                    <p class="project-para"> I conduct in-depth research before starting any project, ensuring efficient
+                        solutions
+                        and real-world impact.</p>
+                </div>
+                <div class="all-project">
+                    <div class="project-1" data-aos="fade-right">
+                        <img class="project-image-1" src="images/projects/smart_gym_iot.png"
+                            style="border-radius: 20px; box-shadow: 0px 10px 30px rgba(177, 108, 234, 0.3);"
+                            alt="Smart GYM">
+                        <div class="project-1-hover">
+                            <a href="projects.html" class=" project-link-1">View Project Details</a>
+                            <h1 class="project-name-1">Smart GYM</h1>
+                            <h3 class="tech">Technology</h3>
+                            <p class="tool">IoT, UART, ESP8266</p>
+                        </div>
+                    </div>
+                    <div class="project-2" data-aos="fade-left">
+                        <img class="project-image-2" src="images/projects/portfolio_monitor_iot.png"
+                            style="border-radius: 20px; box-shadow: 0px 10px 30px rgba(255, 94, 105, 0.3);"
+                            alt="Portfolio Monitor">
+                        <div class="project-2-hover">
+                            <a href="projects.html" class=" project-link-2">View Project Details</a>
+                            <h1 class="project-name-2">Portfolio Monitor</h1>
+                            <h3 class="tech-2">Technology</h3>
+                            <p class="tool-2">ESP32, E-Paper, MQTT</p>
+                        </div>
                     </div>
                 </div>
-                <div class="project-2" data-aos="fade-left">
-                    <img class="project-image-2" src="images/projects/portfolio_monitor_iot.png" style="border-radius: 20px; box-shadow: 0px 10px 30px rgba(255, 94, 105, 0.3);" alt="Portfolio Monitor">
-                    <div class="project-2-hover">
-                        <a href="projects.html" class=" project-link-2">View Project Details</a>
-                        <h1 class="project-name-2">Portfolio Monitor</h1>
-                        <h3 class="tech-2">Technology</h3>
-                        <p class="tool-2">ESP32, E-Paper, MQTT</p>
+            </section>
+
+            <!-- about -->
+            <section class="about-section">
+                <div class="about-left" data-aos="fade-right">
+                    <h3 class="about-name">Karthickraja. M</h3>
+                    <p class="about-detail">Software Developer</p>
+                </div>
+                <div class="about-right" data-aos="fade-left">
+                    <div class="about-discription">
+                        <p class="about-para-1">Passionate Embedded and IoT Developer with hands-on experience in
+                            designing
+                            smart systems,
+                            automation solutions, and scalable web-connected devices.
+                        </p>
+                        <p class="about-para-2"> Focused on real-time monitoring, automation, and user-friendly system
+                            design for practical
+                            applications...
+                        </p>
+                    </div>
+                    <div class="count">
+                        <div>
+                            <h4 class="about-topic">PROJECTS DONE</h4>
+                            <p class="about-count" data-aos="zoom-in" data-aos-delay="300">15+</p>
+                        </div>
+                        <div>
+                            <h4 class="about-topic">EXPERIENCE</h4>
+                            <p class="about-count" data-aos="zoom-in" data-aos-delay="300">3+</p>
+                        </div>
+                        <div>
+                            <h4 class="about-topic">CLIENT PROJECTS</h4>
+                            <p class="about-count" data-aos="zoom-in" data-aos-delay="300">10+</p>
+                        </div>
+                        <div>
+                            <h4 class="about-topic">UG DEGREE</h4>
+                            <p class="about-count" data-aos="zoom-in" data-aos-delay="300">67%</p>
+                        </div>
+                        <div>
+                            <h4 class="about-topic">PG DEGREE</h4>
+                            <p class="about-count" data-aos="zoom-in" data-aos-delay="300">80%</p>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
 
-        <!-- about -->
-        <section class="about-section">
-            <div class="about-left" data-aos="fade-right">
-                <h3 class="about-name">Karthickraja. M</h3>
-                <p class="about-detail">Software Developer</p>
+            <!-- image -->
+            <div class="about-project-img" style="margin-top: 50px; margin-bottom: 80px;">
+                <img class="img-one" data-aos="fade-down" src="images/esp32_controller.png"
+                    style="border-radius: 15px; box-shadow: 0 10px 20px rgba(0,0,0,0.3); object-fit: cover;"
+                    alt="ESP32 Controller">
+                <img class="img-two" data-aos="fade-up" src="images/robotics_ai.png"
+                    style="border-radius: 15px; box-shadow: 0 10px 20px rgba(0,0,0,0.3); object-fit: cover;"
+                    alt="Robotics Assembly">
+                <div class="about-project-img-2">
+                    <img class="img-three" data-aos="fade-down-left" src="images/cloud_iot.png"
+                        style="border-radius: 15px; box-shadow: 0 10px 20px rgba(0,0,0,0.3); object-fit: cover;"
+                        alt="IoT Cloud">
+                    <img class="img-four" data-aos="fade-up-left" src="images/smart_sensors.png"
+                        style="border-radius: 15px; box-shadow: 0 10px 20px rgba(0,0,0,0.3); object-fit: cover;"
+                        alt="Smart Sensors">
+                </div>
             </div>
-            <div class="about-right" data-aos="fade-left">
-                <div class="about-discription">
-                    <p class="about-para-1">Passionate Embedded and IoT Developer with hands-on experience in designing smart systems,
-  automation solutions, and scalable web-connected devices.
+
+            <!-- skill -->
+            <section class="skill-section">
+                <h1 class="skill-topic" data-aos="fade-right">What I do.</h1>
+                <div class="skill-all-box" data-aos="flip-right">
+                    <div class="skill-box" style="border-radius: 15px; border: 1px solid rgba(177, 108, 234, 0.2);">
+                        <i class="fa-solid fa-code" style="font-size: 60px; color: #B16CEA; margin-bottom: 20px;"></i>
+                        <p class="skill-name">C / C++</p>
+                    </div>
+                    <div class="skill-box" style="border-radius: 15px; border: 1px solid rgba(255, 94, 105, 0.2);">
+                        <i class="fa-solid fa-microchip"
+                            style="font-size: 60px; color: #FF5E69; margin-bottom: 20px;"></i>
+                        <p class="skill-name">Embedded C</p>
+                    </div>
+                    <div class="skill-box" style="border-radius: 15px; border: 1px solid rgba(255, 138, 86, 0.2);">
+                        <i class="fa-brands fa-python"
+                            style="font-size: 60px; color: #FF8A56; margin-bottom: 20px;"></i>
+                        <p class="skill-name">Python</p>
+                    </div>
+                    <div class="skill-box" style="border-radius: 15px; border: 1px solid rgba(255, 168, 75, 0.2);">
+                        <i class="fa-brands fa-python"
+                            style="font-size: 60px; color: #FFA84B; margin-bottom: 20px;"></i>
+                        <p class="skill-name">Micro-Python</p>
+                    </div>
+                    <div class="skill-box" style="border-radius: 15px; border: 1px solid rgba(177, 108, 234, 0.2);">
+                        <i class="fa-solid fa-network-wired"
+                            style="font-size: 60px; color: #B16CEA; margin-bottom: 20px;"></i>
+                        <p class="skill-name">IoT & MQTT</p>
+                    </div>
+                    <div class="skill-box" style="border-radius: 15px; border: 1px solid rgba(255, 94, 105, 0.2);">
+                        <i class="fa-solid fa-memory" style="font-size: 60px; color: #FF5E69; margin-bottom: 20px;"></i>
+                        <p class="skill-name">ESP32 / Pi</p>
+                    </div>
+                    <div class="skill-box" style="border-radius: 15px; border: 1px solid rgba(255, 138, 86, 0.2);">
+                        <i class="fa-solid fa-robot" style="font-size: 60px; color: #FF8A56; margin-bottom: 20px;"></i>
+                        <p class="skill-name">Arduino</p>
+                    </div>
+                    <div class="skill-box" style="border-radius: 15px; border: 1px solid rgba(255, 168, 75, 0.2);">
+                        <i class="fa-solid fa-satellite-dish"
+                            style="font-size: 60px; color: #FFA84B; margin-bottom: 20px;"></i>
+                        <p class="skill-name">WiFi / BLE</p>
+                    </div>
+                    <div class="skill-box" style="border-radius: 15px; border: 1px solid rgba(177, 108, 234, 0.2);">
+                        <i class="fa-solid fa-wifi" style="font-size: 60px; color: #B16CEA; margin-bottom: 20px;"></i>
+                        <p class="skill-name">LoRa / Zigbee</p>
+                    </div>
+                    <div class="skill-box" style="border-radius: 15px; border: 1px solid rgba(255, 94, 105, 0.2);">
+                        <i class="fa-brands fa-html5" style="font-size: 60px; color: #FF5E69; margin-bottom: 20px;"></i>
+                        <p class="skill-name">HTML</p>
+                    </div>
+                    <div class="skill-box" style="border-radius: 15px; border: 1px solid rgba(255, 138, 86, 0.2);">
+                        <i class="fa-solid fa-database"
+                            style="font-size: 60px; color: #FF8A56; margin-bottom: 20px;"></i>
+                        <p class="skill-name">MySQL</p>
+                    </div>
+                    <div class="skill-box" style="border-radius: 15px; border: 1px solid rgba(255, 168, 75, 0.2);">
+                        <i class="fa-solid fa-laptop-code"
+                            style="font-size: 60px; color: #FFA84B; margin-bottom: 20px;"></i>
+                        <p class="skill-name">VS Code / IDEs</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- last-section -->
+            <section class="last-section" data-aos="zoom-in">
+                <div class="last-para-box">
+                    <p class="last-para"> Transform your ideas into smart,<br>connected solutions.<br> Let’s build
+                        something
+                        impactful together.
+                        <a href="contact.html" class="last-para two"> Let’s Work Together <img class="vector"
+                                src="images/Vector.png"></a>
                     </p>
-                    <p class="about-para-2"> Focused on real-time monitoring, automation, and user-friendly system design for practical 
-                        applications...
-                    </p>
                 </div>
-                <div class="count">
-                    <div>
-                        <h4 class="about-topic">PROJECTS DONE</h4>
-                        <p class="about-count" data-aos="zoom-in" data-aos-delay="300">15+</p>
-                    </div>
-                    <div>
-                        <h4 class="about-topic">EXPERIENCE</h4>
-                        <p class="about-count" data-aos="zoom-in" data-aos-delay="300">3+</p>
-                    </div>
-                    <div>
-                        <h4 class="about-topic">CLIENT PROJECTS</h4>
-                        <p class="about-count" data-aos="zoom-in" data-aos-delay="300">10+</p>
-                    </div>
-                    <div>
-                        <h4 class="about-topic">UG DEGREE</h4>
-                        <p class="about-count" data-aos="zoom-in" data-aos-delay="300">67%</p>
-                    </div>
-                    <div>
-                        <h4 class="about-topic">PG DEGREE</h4>
-                        <p class="about-count" data-aos="zoom-in" data-aos-delay="300">80%</p>
-                    </div>
-                </div>
-            </div>
-        </section>
+            </section>
 
-        <!-- image -->
-        <div class="about-project-img" style="margin-top: 50px; margin-bottom: 80px;">
-            <img class="img-one" data-aos="fade-down" src="images/esp32_controller.png" style="border-radius: 15px; box-shadow: 0 10px 20px rgba(0,0,0,0.3); object-fit: cover;" alt="ESP32 Controller">
-            <img class="img-two" data-aos="fade-up" src="images/robotics_ai.png" style="border-radius: 15px; box-shadow: 0 10px 20px rgba(0,0,0,0.3); object-fit: cover;" alt="Robotics Assembly">
-            <div class="about-project-img-2">
-                <img class="img-three" data-aos="fade-down-left" src="images/cloud_iot.png" style="border-radius: 15px; box-shadow: 0 10px 20px rgba(0,0,0,0.3); object-fit: cover;" alt="IoT Cloud">
-                <img class="img-four" data-aos="fade-up-left" src="images/smart_sensors.png" style="border-radius: 15px; box-shadow: 0 10px 20px rgba(0,0,0,0.3); object-fit: cover;" alt="Smart Sensors">
-            </div>
+            <!-- footer -->
+            <footer>
+                <div class="footer-left">
+                    <h1 class="footer-topic">SOFTWARE DEVELOPER</h1>
+                    <h1 class="footer-topic-mobile">Karthickraja</h1>
+                    <p class="designed">© Designed & Developed by Karthickraja M</p>
+                </div>
+                <div class="footer-right">
+                    <div class="footer-nav">
+                        <a href="index.html" class="footer footer-home">Home</a>
+                        <a href="about.html" class="footer footer-about">About us</a>
+                        <a href="contact.html" class="footer footer-contact">Contact</a> <br>
+                    </div>
+                    <div class="social-media-box">
+                        <a href="https://www.linkedin.com/in/karthickrajathedeveloper" class="social-media linkedin"><i
+                                class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="https://github.com/karthickrajathedeveloper" class="social-media github"><i
+                                class="fa-brands fa-github"></i></a>
+                        <a href="#" class="social-media instragram"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+            </footer>
+
         </div>
-
-        <!-- skill -->
-        <section class="skill-section">
-            <h1 class="skill-topic" data-aos="fade-right">What I do.</h1>
-            <div class="skill-all-box" data-aos="flip-right">
-                <div class="skill-box" style="border-radius: 15px; border: 1px solid rgba(177, 108, 234, 0.2);">
-                    <i class="fa-solid fa-code" style="font-size: 60px; color: #B16CEA; margin-bottom: 20px;"></i>
-                    <p class="skill-name">C / C++</p>
-                </div>
-                <div class="skill-box" style="border-radius: 15px; border: 1px solid rgba(255, 94, 105, 0.2);">
-                    <i class="fa-solid fa-microchip" style="font-size: 60px; color: #FF5E69; margin-bottom: 20px;"></i>
-                    <p class="skill-name">Embedded C</p>
-                </div>
-                <div class="skill-box" style="border-radius: 15px; border: 1px solid rgba(255, 138, 86, 0.2);">
-                    <i class="fa-brands fa-python" style="font-size: 60px; color: #FF8A56; margin-bottom: 20px;"></i>
-                    <p class="skill-name">Python</p>
-                </div>
-                <div class="skill-box" style="border-radius: 15px; border: 1px solid rgba(255, 168, 75, 0.2);">
-                    <i class="fa-brands fa-python" style="font-size: 60px; color: #FFA84B; margin-bottom: 20px;"></i>
-                    <p class="skill-name">Micro-Python</p>
-                </div>
-                <div class="skill-box" style="border-radius: 15px; border: 1px solid rgba(177, 108, 234, 0.2);">
-                    <i class="fa-solid fa-network-wired" style="font-size: 60px; color: #B16CEA; margin-bottom: 20px;"></i>
-                    <p class="skill-name">IoT & MQTT</p>
-                </div>
-                <div class="skill-box" style="border-radius: 15px; border: 1px solid rgba(255, 94, 105, 0.2);">
-                    <i class="fa-solid fa-memory" style="font-size: 60px; color: #FF5E69; margin-bottom: 20px;"></i>
-                    <p class="skill-name">ESP32 / Pi</p>
-                </div>
-                <div class="skill-box" style="border-radius: 15px; border: 1px solid rgba(255, 138, 86, 0.2);">
-                    <i class="fa-solid fa-robot" style="font-size: 60px; color: #FF8A56; margin-bottom: 20px;"></i>
-                    <p class="skill-name">Arduino</p>
-                </div>
-                <div class="skill-box" style="border-radius: 15px; border: 1px solid rgba(255, 168, 75, 0.2);">
-                    <i class="fa-solid fa-satellite-dish" style="font-size: 60px; color: #FFA84B; margin-bottom: 20px;"></i>
-                    <p class="skill-name">WiFi / BLE</p>
-                </div>
-                <div class="skill-box" style="border-radius: 15px; border: 1px solid rgba(177, 108, 234, 0.2);">
-                    <i class="fa-solid fa-wifi" style="font-size: 60px; color: #B16CEA; margin-bottom: 20px;"></i>
-                    <p class="skill-name">LoRa / Zigbee</p>
-                </div>
-                <div class="skill-box" style="border-radius: 15px; border: 1px solid rgba(255, 94, 105, 0.2);">
-                    <i class="fa-brands fa-html5" style="font-size: 60px; color: #FF5E69; margin-bottom: 20px;"></i>
-                    <p class="skill-name">HTML</p>
-                </div>
-                <div class="skill-box" style="border-radius: 15px; border: 1px solid rgba(255, 138, 86, 0.2);">
-                    <i class="fa-solid fa-database" style="font-size: 60px; color: #FF8A56; margin-bottom: 20px;"></i>
-                    <p class="skill-name">MySQL</p>
-                </div>
-                <div class="skill-box" style="border-radius: 15px; border: 1px solid rgba(255, 168, 75, 0.2);">
-                    <i class="fa-solid fa-laptop-code" style="font-size: 60px; color: #FFA84B; margin-bottom: 20px;"></i>
-                    <p class="skill-name">VS Code / IDEs</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- last-section -->
-        <section class="last-section" data-aos="zoom-in">
-            <div class="last-para-box">
-                <p class="last-para"> Transform your ideas into smart,<br>connected solutions.<br> Let’s build something impactful together.
-                    <a href="contact.html" class="last-para two"> Let’s Work Together <img class="vector"
-                            src="images/Vector.png"></a>
-                </p>
-            </div>
-        </section>
-
-        <!-- footer -->
-        <footer>
-            <div class="footer-left">
-                <h1 class="footer-topic">PORTFOLIO</h1>
-                <h1 class="footer-topic-mobile">Karthickraja</h1>
-                <p class="designed">© Designed & Developed by Karthickraja M</p>
-            </div>
-            <div class="footer-right">
-                <div class="footer-nav">
-                    <a href="index.html" class="footer footer-home">Home</a>
-                    <a href="about.html" class="footer footer-about">About us</a>
-                    <a href="contact.html" class="footer footer-contact">Contact</a> <br>
-                </div>
-                <div class="social-media-box">
-                    <a href="https://www.linkedin.com/in/karthickrajathedeveloper" class="social-media linkedin"><i
-                            class="fa-brands fa-linkedin-in"></i></a>
-                    <a href="https://github.com/karthickrajathedeveloper" class="social-media github"><i
-                            class="fa-brands fa-github"></i></a>
-                    <a href="#" class="social-media instragram"><i class="fa-brands fa-instagram"></i></a>
-                </div>
-            </div>
-        </footer>
-
     </div>
+
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="script/cinematic.js"></script>
 
     <script src="script/script.js"></script>
 
@@ -325,6 +381,3 @@
 
 
 </html>
-
-
-

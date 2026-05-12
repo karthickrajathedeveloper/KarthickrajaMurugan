@@ -20,9 +20,15 @@
 }
 
 .name {
+    font-family: 'Sacramento', cursive;
+    font-size: 1.3em; /* Make it slightly larger as script fonts can look smaller */
     background: var(--gradient-color);
     background-clip: text;
+    -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    display: inline-block;
+    padding-right: 10px;
+    transform: rotate(-2deg); /* Subtle tilt for realistic signature feel */
 }
 
 .detail {
@@ -148,12 +154,23 @@ marquee img {
 
 /* project-section */
 .project-section {
-    padding-inline: 120px;
+    width: 100%;
     margin-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-inline: 20px; /* Minimal padding for mobile */
 }
 
 .project-intro {
-    max-width: 500px;
+    width: 100%;
+    max-width: 800px;
+    text-align: center;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .topic {
@@ -167,6 +184,15 @@ marquee img {
 
 .project-para {
     color: var(--black-color);
+}
+
+.all-project {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+    width: 100%;
 }
 
 .project-1 {
@@ -528,6 +554,7 @@ opacity: 1;
 
     .all-project {
         display: flex;
+        justify-content: center;
         column-gap: 30px;
     }
 
@@ -582,12 +609,18 @@ opacity: 1;
 @media (max-width: 1150px) {
 
     .profile-section,
-    .project-section,
     .about-section,
     .skill-section,
     .last-section,
     .about-project-img {
         padding-inline: 60px;
+    }
+
+    .project-section {
+        padding-inline: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     .skill-all-box {
@@ -944,7 +977,6 @@ opacity: 1;
 @media (max-width: 524px) {
 
     .profile-section,
-    .project-section,
     .about-section,
     .skill-section,
     .last-section,
