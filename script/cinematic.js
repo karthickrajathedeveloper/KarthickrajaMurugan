@@ -7,7 +7,8 @@ document.addEventListener("DOMContentLoaded", () => {
     if (sigText) {
         // Grouping: K | arthick | r | aja
         sigText.innerHTML = `
-            <span class="sig-group init-k">K</span><span class="sig-group exp-1">arthick</span><span class="sig-group init-r">r</span><span class="sig-group exp-2">aja</span>
+            <span class="sig-word"><span class="sig-group init-k">K</span><span class="sig-group exp-1">arthick</span></span>
+            <span class="sig-word"><span class="sig-group init-r">r</span><span class="sig-group exp-2">aja</span></span>
         `;
         
         // Style these groups for expansion
