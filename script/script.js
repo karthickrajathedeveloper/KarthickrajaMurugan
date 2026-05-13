@@ -136,8 +136,7 @@ if (contactForm) {
         const phoneNumber = "916380528683";
 
         // Construct the message
-        const whatsappMessage = `*Hi, Portfolio Inquiry*%0A%0A` +
-            `*Name:* ${name}%0A` +
+        const whatsappMessage = `*Hi, I'm ${name}*%0A%0A` +
             `*Email:* ${email}%0A` +
             `*Subject:* ${subject}%0A` +
             `*Message:* ${message}`;

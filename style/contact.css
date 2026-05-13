@@ -30,7 +30,8 @@
 }
 
 .email-icon-box,
-.phone-icon-box {
+.phone-icon-box,
+.address-icon-box {
     font-weight: 700;
     display: flex;
     align-items: center;
@@ -40,7 +41,8 @@
 }
 
 .email-icon,
-.phone-icon {
+.phone-icon,
+.address-icon {
     display: block;
     font-size: 30px;
     margin-right: 10px;
@@ -49,7 +51,7 @@
     -webkit-text-fill-color: transparent;
 }
 
-.phone-link,.email-link{
+.phone-link, .email-link, .address-link {
     display: flex;
     align-items: center;
     text-decoration: none;
@@ -104,7 +106,8 @@ form {
 }
 
 .email-icon-box:hover,
-.phone-icon-box:hover{
+.phone-icon-box:hover,
+.address-icon-box:hover {
     text-decoration: underline;
 }
 
@@ -113,7 +116,8 @@ form {
 .subject-box:hover,
 .message-box:hover,
 .email-icon-box:hover,
-.phone-icon-box:hover {
+.phone-icon-box:hover,
+.address-icon-box:hover {
     cursor: pointer;
     animation: shake 0.5s 0.8;
 }

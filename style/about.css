@@ -482,9 +482,14 @@ body.light-theme .road-runner i {
 }
 
 .about-name {
+    font-family: 'Sacramento', cursive;
+    font-size: 1.2em;
     background: var(--gradient-color);
     background-clip: text;
+    -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    display: inline-block;
+    transform: rotate(-2deg);
 }
 
 .about-me-rightside {
