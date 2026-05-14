@@ -99,6 +99,11 @@ body.dark-theme .dock-divider {
 
 .dock-item.active {
     background: var(--gradient-color);
+    box-shadow: 0 0 15px rgba(177, 108, 234, 0.5);
+}
+
+.dock-item i {
+    z-index: 2;
 }
 
 /* Theme Section */
@@ -137,8 +142,8 @@ body.dark-theme .dock-divider {
     bottom: -40px;
     left: 50%;
     transform: translateX(-50%) translateY(10px);
-    background: var(--black-color);
-    color: var(--white-color);
+    background: #000000;
+    color: #ffffff;
     padding: 6px 12px;
     border-radius: 8px;
     font-size: 12px;
@@ -146,9 +151,14 @@ body.dark-theme .dock-divider {
     opacity: 0;
     pointer-events: none;
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
     white-space: nowrap;
     z-index: 2000;
+}
+
+body.dark-theme .dock-item::after {
+    background: #ffffff;
+    color: #000000;
 }
 
 .dock-item:hover::after {
