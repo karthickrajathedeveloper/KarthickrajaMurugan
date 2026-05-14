@@ -101,9 +101,13 @@ body.dark-theme .dock-divider {
     background: #3d5254;
 }
 
-.dock-item.active {
+.dock-item.active:not(.home) {
     background: var(--gradient-color);
     box-shadow: 0 0 15px rgba(177, 108, 234, 0.5);
+}
+
+.dock-item.active.home {
+    background: #2d3e40; /* Keeping it normal dark teal */
 }
 
 /* Theme Section */
