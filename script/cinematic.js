@@ -118,47 +118,22 @@ document.addEventListener("DOMContentLoaded", () => {
         ease: "power3.out"
     }, "-=1")
     .from(".detail", {
-        y: 50,
+        x: -100,
         opacity: 0,
-        duration: 1.2,
+        duration: 1.5,
         ease: "power4.out"
     }, "-=0.8")
-    .from(".name", {
+    .from(".profile-picture", {
+        x: 100,
         opacity: 0,
-        x: -20,
         duration: 1.5,
-        ease: "power2.out"
-    }, "-=0.6")
-    .from(".detail-para", {
-        y: 30,
-        opacity: 0,
-        duration: 1,
-        ease: "power3.out"
-    }, "-=1")
+        ease: "power4.out"
+    }, "-=1.5")
     .from(".profile button", {
-        x: -30,
+        y: 20,
         opacity: 0,
         duration: 0.8,
         stagger: 0.2,
         ease: "power3.out"
-    }, "-=0.8")
-    .from(".profile-picture", {
-        scale: 0.8,
-        opacity: 0,
-        duration: 1.5,
-        ease: "power4.out"
-    }, "-=1.2");
-
-    // Optional: Mouse Parallax for Hero Image
-    document.addEventListener("mousemove", (e) => {
-        const mouseX = (e.clientX / window.innerWidth) - 0.5;
-        const mouseY = (e.clientY / window.innerHeight) - 0.5;
-
-        gsap.to(".profile-picture", {
-            rotationY: mouseX * 10,
-            rotationX: -mouseY * 10,
-            duration: 1,
-            ease: "power2.out"
-        });
-    });
+    }, "-=0.6");
 });
