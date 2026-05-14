@@ -132,7 +132,7 @@ body.dark-theme .dock-divider {
 
 /* Tooltip (CSS only) */
 .dock-item::after {
-    content: attr(title);
+    content: attr(data-title);
     position: absolute;
     bottom: -40px;
     left: 50%;
