@@ -1,30 +1,48 @@
-<!-- desktop header -->
-<nav class="desktop-header">
-    <ul class="nav-bar">
-        <div class="header-left">
-            <li>
-                <h1 class="desktop-title"><span class="desktop">SOFTWARE DEVELOPER</span></h1>
-            </li>
-            <div class="header-clock" id="header-clock-desktop"></div>
+<!-- Floating Dock Header -->
+<div class="dock-wrapper">
+    <nav class="floating-dock">
+        <!-- Left: Clock Section -->
+        <div class="dock-section clock-section">
+            <div class="dock-time" id="dock-time">--:-- --</div>
+            <div class="dock-date" id="dock-date">---, --- --, ----</div>
         </div>
-        <div class="header-right">
-            <li><a href="index.html" class="header home">Home</a></li>
-            <li><a href="projects.html" class="header project">Projects</a></li>
-            <li><a href="about.html" class="header about">About</a></li>
-            <li><a href="contact.html" class="header contact">Contact</a></li>
-            <a href="contact.html"><button class="header-button">LET'S TALK</button></a>
-            <div class="moon"><i class="fa-solid fa-moon"></i></div>
-            <div class="sun"><i class="fa-solid fa-sun"></i></div>
-        </div>
-    </ul>
-</nav>
 
-<!-- mobile-header -->
+        <div class="dock-divider"></div>
+
+        <!-- Center: Nav Section -->
+        <div class="dock-section nav-section">
+            <a href="index.html" class="dock-item home" title="Home">
+                <i class="fa-solid fa-house"></i>
+            </a>
+            <a href="about.html" class="dock-item about" title="About">
+                <i class="fa-solid fa-user"></i>
+            </a>
+            <a href="projects.html" class="dock-item project" title="Projects">
+                <i class="fa-solid fa-briefcase"></i>
+            </a>
+            <a href="contact.html" class="dock-item contact" title="Contact">
+                <i class="fa-solid fa-envelope"></i>
+            </a>
+        </div>
+
+        <div class="dock-divider"></div>
+
+        <!-- Right: Theme Section -->
+        <div class="dock-section theme-section">
+            <div class="theme-toggle">
+                <div class="moon"><i class="fa-solid fa-moon"></i></div>
+                <div class="sun"><i class="fa-solid fa-sun"></i></div>
+            </div>
+        </div>
+    </nav>
+</div>
+
+<!-- Mobile Header (keep it simple or adapt) -->
 <nav class="mobile-header">
     <div class="mobile-nav">
         <div class="control">
             <div class="mobile-left">
-                <h1 class="mobile">SOFTWARE DEVELOPER</h1>
+                <h1 class="mobile">Karthickraja</h1>
                 <div class="header-clock" id="header-clock-mobile"></div>
             </div>
             <div class="control-right">

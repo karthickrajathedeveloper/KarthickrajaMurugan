@@ -58,7 +58,7 @@ async function initLayout() {
         let currentPage = currentPath.split("/").pop() || 'index.html';
         if (currentPage === '') currentPage = 'index.html';
 
-        const navLinks = document.querySelectorAll('.header, .header2, .footer');
+        const navLinks = document.querySelectorAll('.header, .header2, .footer, .dock-item');
         navLinks.forEach(link => {
             const href = link.getAttribute('href');
             if (href === currentPage) {

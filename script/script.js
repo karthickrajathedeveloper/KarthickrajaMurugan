@@ -9,7 +9,7 @@ function initHeaderEvents() {
         threeBar.addEventListener("click", () => {
             threeBar.style.display = "none";
             close.style.display = "block";
-            mobiledropDown.style.display = "block";
+            mobiledropDown.style.display = "flex"; // Changed to flex for mobile menu
         });
         close.addEventListener("click", () => {
             threeBar.style.display = "block";
@@ -17,6 +17,15 @@ function initHeaderEvents() {
             mobiledropDown.style.display = "none";
         });
     }
+
+    // Add click event for dock items to handle active state
+    const dockItems = document.querySelectorAll('.dock-item');
+    dockItems.forEach(item => {
+        item.addEventListener('click', () => {
+            dockItems.forEach(i => i.classList.remove('active'));
+            item.classList.add('active');
+        });
+    });
 
     // Re-initialize dark mode icons after header load
     initDarkMode();
@@ -29,23 +38,31 @@ function initHeaderEvents() {
 function startClock() {
     const clockDesktop = document.getElementById('header-clock-desktop');
     const clockMobile = document.getElementById('header-clock-mobile');
+    
+    // Dock clock elements
+    const dockTime = document.getElementById('dock-time');
+    const dockDate = document.getElementById('dock-date');
 
     function update() {
         const now = new Date();
-        const options = { 
-            weekday: 'short', 
-            day: '2-digit', 
-            month: 'short', 
-            hour: '2-digit', 
-            minute: '2-digit', 
-            second: '2-digit',
-            hour12: true 
-        };
-        // Format: Thu 14 May 02:22:23 PM
-        const timeString = now.toLocaleString('en-US', options).replace(/,/g, '');
         
-        if (clockDesktop) clockDesktop.textContent = timeString;
-        if (clockMobile) clockMobile.textContent = timeString;
+        // Format for Dock Time: 03:03 PM
+        const timeOptions = { hour: '2-digit', minute: '2-digit', hour12: true };
+        const timeString = now.toLocaleTimeString('en-US', timeOptions);
+        
+        // Format for Dock Date: Thu, May 14, 2026
+        const dateOptions = { weekday: 'short', month: 'short', day: '2-digit', year: 'numeric' };
+        const dateString = now.toLocaleDateString('en-US', dateOptions);
+
+        // General clock format for mobile
+        const generalOptions = { weekday: 'short', day: '2-digit', month: 'short', hour: '2-digit', minute: '2-digit', hour12: true };
+        const generalString = now.toLocaleString('en-US', generalOptions).replace(/,/g, '');
+        
+        if (dockTime) dockTime.textContent = timeString;
+        if (dockDate) dockDate.textContent = dateString;
+        
+        if (clockDesktop) clockDesktop.textContent = generalString;
+        if (clockMobile) clockMobile.textContent = generalString;
     }
 
     update();

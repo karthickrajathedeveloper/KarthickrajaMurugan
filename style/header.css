@@ -1,135 +1,158 @@
-.desktop-header {
-    background-color: var(--main-color);
-    /* border-bottom: 1px solid rgba(0, 0, 0, 0.034); */
+/* Floating Dock Header Styles */
+.dock-wrapper {
     position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    padding-block: 20px;
-    padding-inline: 120px;
-    font-family: "Inter", sans-serif;
-    z-index: 50;
+    top: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    width: auto;
+    pointer-events: none; /* Only the dock itself should be clickable */
 }
 
-.desktop-title-logo,
-.desktop-title {
-    border: 1px solid transparent;
-    border-radius: 12px;
-    padding: 8px 16px;
-    transition: all 0.4s ease;
-    display: inline-block;
+.floating-dock {
+    pointer-events: auto;
+    display: flex;
+    align-items: center;
+    padding: 10px 24px;
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 50px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.desktop-title-logo:hover,
-.desktop-title:hover {
-    border-color: #B16CEA;
-    box-shadow: 0 0 20px rgba(177, 108, 234, 0.3);
-    background: rgba(177, 108, 234, 0.05);
+/* Dark theme adjustments for dock */
+body.dark-theme .floating-dock {
+    background: rgba(20, 20, 20, 0.7);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
 }
 
-.desktop {
-    background: var(--gradient-color);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-size: 200% auto;
-    animation: shine 4s linear infinite;
+.dock-section {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+/* Clock Section */
+.clock-section {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2px;
+    padding-right: 15px;
+}
+
+.dock-time {
+    font-size: 16px;
     font-weight: 800;
-    letter-spacing: 1px;
-    font-size: 24px;
-
+    color: var(--black-color);
+    line-height: 1;
 }
 
-
-@keyframes shine {
-    to {
-        background-position: 200% center;
-    }
-}
-
-.header-clock {
-    margin-left: 20px;
-    font-size: 13px;
+.dock-date {
+    font-size: 11px;
+    font-weight: 500;
     color: var(--black-color);
     opacity: 0.6;
-    font-family: 'Inter', sans-serif;
-    font-weight: 500;
-    letter-spacing: 0.5px;
-    padding-left: 15px;
-    border-left: 1px solid rgba(0, 0, 0, 0.1);
 }
 
-.nav-bar {
-    display: flex;
-    justify-content: space-between;
-    text-wrap: nowrap;
+.dock-divider {
+    width: 1px;
+    height: 30px;
+    background: rgba(0, 0, 0, 0.1);
+    margin-inline: 15px;
 }
 
-.header-left {
+body.dark-theme .dock-divider {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+/* Nav Section */
+.nav-section {
+    gap: 8px;
+}
+
+.dock-item {
+    width: 44px;
+    height: 44px;
     display: flex;
-    justify-content: start;
     align-items: center;
-}
-
-li {
-    list-style-type: none;
-}
-
-.nav-bar h1 {
-    margin-right: 50px;
-}
-
-.header {
-    color: var(--black-color);
+    justify-content: center;
+    border-radius: 50%;
+    background: #2d3e40; /* Dark teal from image */
+    color: #ffffff;
     text-decoration: none;
-    font-weight: 400;
-    margin-right: 30px;
+    font-size: 18px;
+    transition: all 0.3s ease;
+    position: relative;
 }
 
-.header:hover {
+.dock-item:hover {
+    transform: translateY(-5px) scale(1.1);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    background: #3d5254;
+}
+
+.dock-item.active {
     background: var(--gradient-color);
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
 }
 
-.header-button {
-    background-color: var(--black-color);
-    color: var(--white-color);
-    padding-block: 12px;
-    padding-inline: 24px;
-    border-radius: 50px;
-    border: none;
-    font-weight: 500;
-    font-family: "Inter", sans-serif;
-    cursor: pointer;
+/* Theme Section */
+.theme-section {
+    padding-left: 10px;
 }
 
-.header-button:hover {
-    background-color: var(--white-color);
-    color: var(--black-color);
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    border: 2px solid var(--black-color);
-}
-
-.header-right {
+.theme-toggle {
+    width: 44px;
+    height: 44px;
     display: flex;
     align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.5);
+    border: 1px solid rgba(177, 108, 234, 0.2);
+    cursor: pointer;
+    transition: all 0.3s ease;
 }
 
-.sun {
-    margin-left: 15px;
-    display: none;
-    font-size: 30px;
-    color: white;
+.theme-toggle:hover {
+    background: rgba(177, 108, 234, 0.1);
+    transform: rotate(15deg);
 }
 
-.moon {
-    margin-left: 15px;
-    font-size: 30px;
+.theme-toggle .moon, 
+.theme-toggle .sun {
+    margin-left: 0;
+    font-size: 20px;
 }
 
-/* Mobile-nav */
+/* Tooltip (CSS only) */
+.dock-item::after {
+    content: attr(title);
+    position: absolute;
+    bottom: -35px;
+    left: 50%;
+    transform: translateX(-50%) translateY(10px);
+    background: var(--black-color);
+    color: var(--white-color);
+    padding: 4px 10px;
+    border-radius: 6px;
+    font-size: 11px;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
 
+.dock-item:hover::after {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+}
+
+/* Mobile Adjustments */
 .mobile-header {
     position: fixed;
     top: 0;
@@ -142,159 +165,25 @@ li {
 
 .mobile-nav {
     padding-inline: 60px;
-    padding-block: 20px;
-    display: none;
-}
-
-.mobile {
-    background: var(--gradient-color);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-size: 200% auto;
-    animation: shine 4s linear infinite;
-    font-weight: 800;
-}
-
-.mobile-left {
-    display: flex;
-    flex-direction: column;
+    padding-block: 15px;
 }
 
 .mobile-left .header-clock {
-    margin-left: 0;
-    margin-top: 5px;
+    margin-top: 2px;
     font-size: 10px;
-    border-left: none;
-    padding-left: 0;
-}
-
-.control {
-    width: 100%;
-    justify-content: space-between;
-    display: none;
-}
-
-.control-right {
-    display: flex;
-}
-
-.three-bar {
-    font-size: 30px;
-    color: var(--black-color);
-    text-align: center;
-    width: 40px;
-    margin-left: 15px;
-}
-
-.three-bar:active {
-    background-color: var(--black-color);
-    color: var(--white-color);
-}
-
-.close {
-    font-size: 30px;
-    color: var(--black-color);
-    text-align: center;
-    width: 40px;
-    border-radius: 50%;
-    margin-left: 15px;
-    display: none;
-}
-
-.close:active {
-    background-color: var(--black-color);
-    color: var(--white-color);
-}
-
-.mobile-drop-down {
-    position: absolute;
-    background-color: var(--main-color);
-    width: 100%;
-    top: 60px;
-    left: 0;
-    display: flex;
-    flex-direction: column;
-    display: none;
-    border-bottom: 1px rgba(128, 128, 128, 0.473) solid;
-}
-
-.header2 {
-    display: block;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    padding-left: 60px;
-    color: var(--black-color);
-    text-decoration: none;
-}
-
-.header2:hover {
-    background: var(--gradient-color);
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-.header2-button {
-    background-color: var(--black-color);
-    color: var(--white-color);
-    padding-block: 12px;
-    padding-inline: 24px;
-    border-radius: 50px;
-    border: none;
-    font-weight: 500;
-    cursor: pointer;
-}
-
-.header2-button:hover {
-    background-color: var(--white-color);
-    color: var(--black-color);
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-}
-
-.headerbutton {
-    display: block;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    padding-left: 60px;
-}
-
-
-
-
-@media (max-width: 1150px) {
-    .desktop-header {
-        padding-inline: 60px
-    }
 }
 
 @media (max-width: 850px) {
-
-    /* 1024px */
-    .desktop-header {
+    .dock-wrapper {
         display: none;
     }
-
     .mobile-header {
         display: block;
     }
-
-    .mobile-nav {
-        display: block;
-    }
-
-    .control {
-        display: flex;
-    }
 }
-
 
 @media (max-width: 524px) {
     .mobile-nav {
-        padding-inline: 30px;
-    }
-
-    .header2,
-    .headerbutton {
-        padding-left: 30px;
+        padding-inline: 20px;
     }
 }
