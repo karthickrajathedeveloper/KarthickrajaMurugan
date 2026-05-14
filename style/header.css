@@ -8,7 +8,7 @@
     display: flex;
     justify-content: center;
     width: auto;
-    pointer-events: none; /* Only the dock itself should be clickable */
+    pointer-events: none;
 }
 
 .floating-dock {
@@ -25,7 +25,6 @@
     transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* Dark theme adjustments for dock */
 body.dark-theme .floating-dock {
     background: rgba(20, 20, 20, 0.7);
     border: 1px solid rgba(255, 255, 255, 0.1);
@@ -83,12 +82,17 @@ body.dark-theme .dock-divider {
     align-items: center;
     justify-content: center;
     border-radius: 50%;
-    background: #2d3e40; /* Dark teal from image */
-    color: #ffffff;
+    background: #2d3e40;
+    color: #ffffff !important;
     text-decoration: none;
     font-size: 18px;
     transition: all 0.3s ease;
     position: relative;
+}
+
+.dock-item i {
+    z-index: 2;
+    pointer-events: none;
 }
 
 .dock-item:hover {
@@ -100,10 +104,6 @@ body.dark-theme .dock-divider {
 .dock-item.active {
     background: var(--gradient-color);
     box-shadow: 0 0 15px rgba(177, 108, 234, 0.5);
-}
-
-.dock-item i {
-    z-index: 2;
 }
 
 /* Theme Section */
@@ -135,20 +135,20 @@ body.dark-theme .dock-divider {
     font-size: 20px;
 }
 
-/* Tooltip (CSS only) */
-.dock-item::after {
-    content: attr(data-title);
+/* Tooltip Styles */
+.dock-tooltip {
     position: absolute;
-    bottom: -40px;
+    bottom: -45px;
     left: 50%;
     transform: translateX(-50%) translateY(10px);
     background: #000000;
-    color: #ffffff;
+    color: #ffffff !important;
     padding: 6px 12px;
     border-radius: 8px;
     font-size: 12px;
     font-weight: 600;
     opacity: 0;
+    visibility: hidden;
     pointer-events: none;
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
@@ -156,13 +156,14 @@ body.dark-theme .dock-divider {
     z-index: 2000;
 }
 
-body.dark-theme .dock-item::after {
+body.dark-theme .dock-tooltip {
     background: #ffffff;
-    color: #000000;
+    color: #000000 !important;
 }
 
-.dock-item:hover::after {
+.dock-item:hover .dock-tooltip {
     opacity: 1;
+    visibility: visible;
     transform: translateX(-50%) translateY(0);
 }
 
