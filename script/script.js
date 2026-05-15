@@ -9,12 +9,14 @@ function initHeaderEvents() {
         threeBar.addEventListener("click", () => {
             threeBar.style.display = "none";
             close.style.display = "block";
-            mobiledropDown.style.display = "flex"; // Changed to flex for mobile menu
+            mobiledropDown.style.display = "flex";
+            document.body.style.overflow = "hidden"; // Prevent scroll
         });
         close.addEventListener("click", () => {
             threeBar.style.display = "block";
             close.style.display = "none";
             mobiledropDown.style.display = "none";
+            document.body.style.overflow = "auto"; // Enable scroll
         });
     }
 

@@ -1113,13 +1113,37 @@ opacity: 1;
     }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 500px) {
+    .profile-section {
+        padding-inline: 20px;
+        margin-top: 30px;
+        margin-bottom: 80px;
+        text-align: center;
+        align-items: center;
+    }
+
     .detail {
-        font-size: 30px;
+        font-size: 32px !important;
+        line-height: 1.2;
     }
 
     .detail-para {
-        font-size: 14px;
+        font-size: 15px;
+        margin-top: 15px;
+        margin-bottom: 25px;
+        line-height: 1.6;
+    }
+
+    .profile-button, .profile-button-2 {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 400px) {
+    .detail {
+        font-size: 28px !important;
     }
 }
 
